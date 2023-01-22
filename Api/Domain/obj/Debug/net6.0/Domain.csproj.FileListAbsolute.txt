@@ -1,0 +1,24 @@
+/Users/michalszala/Desktop/Development/Medium/Authentication Guide/5 Simple login and register API/TokenAuthNet5/Domain/bin/Debug/net6.0/Domain.deps.json
+/Users/michalszala/Desktop/Development/Medium/Authentication Guide/5 Simple login and register API/TokenAuthNet5/Domain/bin/Debug/net6.0/Domain.dll
+/Users/michalszala/Desktop/Development/Medium/Authentication Guide/5 Simple login and register API/TokenAuthNet5/Domain/bin/Debug/net6.0/Domain.pdb
+/Users/michalszala/Desktop/Development/Medium/Authentication Guide/5 Simple login and register API/TokenAuthNet5/Domain/obj/Debug/net6.0/Domain.csproj.AssemblyReference.cache
+/Users/michalszala/Desktop/Development/Medium/Authentication Guide/5 Simple login and register API/TokenAuthNet5/Domain/obj/Debug/net6.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/michalszala/Desktop/Development/Medium/Authentication Guide/5 Simple login and register API/TokenAuthNet5/Domain/obj/Debug/net6.0/Domain.AssemblyInfoInputs.cache
+/Users/michalszala/Desktop/Development/Medium/Authentication Guide/5 Simple login and register API/TokenAuthNet5/Domain/obj/Debug/net6.0/Domain.AssemblyInfo.cs
+/Users/michalszala/Desktop/Development/Medium/Authentication Guide/5 Simple login and register API/TokenAuthNet5/Domain/obj/Debug/net6.0/Domain.csproj.CoreCompileInputs.cache
+/Users/michalszala/Desktop/Development/Medium/Authentication Guide/5 Simple login and register API/TokenAuthNet5/Domain/obj/Debug/net6.0/Domain.dll
+/Users/michalszala/Desktop/Development/Medium/Authentication Guide/5 Simple login and register API/TokenAuthNet5/Domain/obj/Debug/net6.0/refint/Domain.dll
+/Users/michalszala/Desktop/Development/Medium/Authentication Guide/5 Simple login and register API/TokenAuthNet5/Domain/obj/Debug/net6.0/Domain.pdb
+/Users/michalszala/Desktop/Development/Medium/Authentication Guide/5 Simple login and register API/TokenAuthNet5/Domain/obj/Debug/net6.0/ref/Domain.dll
+/Users/michalszala/Desktop/Development/Medium/CompleteAuthenticationGuide/Api/Domain/bin/Debug/net6.0/Domain.deps.json
+/Users/michalszala/Desktop/Development/Medium/CompleteAuthenticationGuide/Api/Domain/bin/Debug/net6.0/Domain.dll
+/Users/michalszala/Desktop/Development/Medium/CompleteAuthenticationGuide/Api/Domain/bin/Debug/net6.0/Domain.pdb
+/Users/michalszala/Desktop/Development/Medium/CompleteAuthenticationGuide/Api/Domain/obj/Debug/net6.0/Domain.csproj.AssemblyReference.cache
+/Users/michalszala/Desktop/Development/Medium/CompleteAuthenticationGuide/Api/Domain/obj/Debug/net6.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/michalszala/Desktop/Development/Medium/CompleteAuthenticationGuide/Api/Domain/obj/Debug/net6.0/Domain.AssemblyInfoInputs.cache
+/Users/michalszala/Desktop/Development/Medium/CompleteAuthenticationGuide/Api/Domain/obj/Debug/net6.0/Domain.AssemblyInfo.cs
+/Users/michalszala/Desktop/Development/Medium/CompleteAuthenticationGuide/Api/Domain/obj/Debug/net6.0/Domain.csproj.CoreCompileInputs.cache
+/Users/michalszala/Desktop/Development/Medium/CompleteAuthenticationGuide/Api/Domain/obj/Debug/net6.0/Domain.dll
+/Users/michalszala/Desktop/Development/Medium/CompleteAuthenticationGuide/Api/Domain/obj/Debug/net6.0/refint/Domain.dll
+/Users/michalszala/Desktop/Development/Medium/CompleteAuthenticationGuide/Api/Domain/obj/Debug/net6.0/Domain.pdb
+/Users/michalszala/Desktop/Development/Medium/CompleteAuthenticationGuide/Api/Domain/obj/Debug/net6.0/ref/Domain.dll
