@@ -1,0 +1,9 @@
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.facebook-button {
+  height: 32px;
+}

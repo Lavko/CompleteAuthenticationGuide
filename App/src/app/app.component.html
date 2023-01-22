@@ -1,0 +1,35 @@
+<p>
+  <mat-toolbar>
+    <span>Auth App</span>
+    <button mat-button [routerLink]="''">Home</button>
+    <button *ngIf="isLogged$ | async" mat-button [routerLink]="'protected'">
+      Protected
+    </button>
+    <span class="menu-spacer"></span>
+    <button
+      *ngIf="(isLogged$ | async) === false"
+      mat-button
+      [matMenuTriggerFor]="logMenu">
+      <mat-icon>person</mat-icon>
+    </button>
+    <button *ngIf="isLogged$ | async" mat-button [matMenuTriggerFor]="logMenu">
+      Hi, {{ (tokenInfo$ | async)?.userName }}
+    </button>
+    <mat-menu #logMenu="matMenu">
+      <button *ngIf="(isLogged$ | async) === false" mat-menu-item [routerLink]="'login'">
+        Log in
+      </button>
+      <button
+        *ngIf="(isLogged$ | async) === false"
+        mat-menu-item
+        [routerLink]="'register'">
+        Sign up
+      </button>
+      <button *ngIf="isLogged$ | async" mat-menu-item (click)="logOut()">
+        Log out
+      </button>
+    </mat-menu>
+  </mat-toolbar>
+</p>
+
+<router-outlet></router-outlet>

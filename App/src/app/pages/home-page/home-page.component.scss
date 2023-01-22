@@ -1,0 +1,11 @@
+.tests-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.test-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
