@@ -6,7 +6,7 @@ import { select, Store } from '@ngrx/store';
 import jwtDecode from 'jwt-decode';
 import { Token } from '../models/token';
 import { Claims } from './dtos/claims';
-import { map, Observable, take } from 'rxjs';
+import { map, Observable, take, tap } from 'rxjs';
 import { selectAuthToken } from '../store/selectors/auth-selectors';
 import { State } from '../store/reducers';
 import { Router } from '@angular/router';
@@ -56,12 +56,23 @@ export class AuthService {
       .pipe(take(1));
   }
 
-  public refreshToken(accessToken: string, refreshToken: string) {
-    return this.authenticationClient
-      .refreshToken(accessToken, refreshToken)
-      .subscribe(response => {
-        this.handleSuccessLogging(response.accessToken, response.refreshToken);
-      });
+  public refreshToken() {
+    const accessToken = localStorage.getItem(this.accessTokenKey);
+    const refreshToken = localStorage.getItem(this.refreshTokenKey);
+    if (accessToken && refreshToken) {
+      return this.authenticationClient
+        .refreshToken(accessToken, refreshToken)
+        .pipe(
+          take(1),
+          tap(response => {
+            this.handleSuccessLogging(
+              response.accessToken,
+              response.refreshToken
+            );
+          })
+        );
+    }
+    return false;
   }
 
   public logout() {

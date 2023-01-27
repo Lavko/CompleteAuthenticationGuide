@@ -63,8 +63,8 @@ import { HttpErrorInterceptor } from './helpers/http-error.interceptor';
     MatSnackBarModule,
   ],
   providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: HttpErrorInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true },
     {
       provide: 'SocialAuthServiceConfig',
       useValue: {

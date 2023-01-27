@@ -52,7 +52,7 @@ export class AuthenticationClient {
     refreshToken: string
   ): Observable<RefreshTokenResponseDto> {
     return this.http.post<RefreshTokenResponseDto>(
-      environment.apiUrl + '/auth/social-login',
+      environment.apiUrl + '/auth/refresh-token',
       {
         accessToken: accessToken,
         refreshToken: refreshToken,

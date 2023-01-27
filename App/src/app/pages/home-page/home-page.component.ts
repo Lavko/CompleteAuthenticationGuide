@@ -20,9 +20,9 @@ export class HomePageComponent {
   }
 
   public getForRegistered() {
-    this.authTestingClient
-      .getTextForRegistered()
-      .subscribe(text => (this.textForRegistered = text));
+    this.authTestingClient.getTextForRegistered().subscribe(text => {
+      this.textForRegistered = text;
+    });
   }
 
   public getForAdmins() {
