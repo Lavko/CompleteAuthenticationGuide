@@ -1,4 +1,3 @@
-using Domain;
 using Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +7,8 @@ namespace Db;
 
 public static class SeedManager
 {
+    private const string Admin = "Admin";
+    private const string User = "Admin";
     public static async Task Seed(IServiceProvider services)
     {
         await SeedRoles(services);
@@ -19,14 +20,14 @@ public static class SeedManager
     {
         var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
 
-        if (!roleManager.Roles.Any(r => r.Name == Role.Admin))
+        if (!roleManager.Roles.Any(r => r.Name == Admin))
         {
-            await roleManager.CreateAsync(new IdentityRole(Role.Admin));
+            await roleManager.CreateAsync(new IdentityRole(Admin));
         }
 
-        if (!roleManager.Roles.Any(r => r.Name == Role.User))
+        if (!roleManager.Roles.Any(r => r.Name == User))
         {
-            await roleManager.CreateAsync(new IdentityRole(Role.User));
+            await roleManager.CreateAsync(new IdentityRole(User));
         }
     }
     
@@ -43,7 +44,7 @@ public static class SeedManager
                 { 
                     UserName = "AuthenticationAdmin",
                     Email = "your@email.com",
-                    Provider = Consts.LoginProviders.Password
+                    Provider = "Password"
                 };
                 await userManager.CreateAsync(adminUser, "VerySecretPassword!1");
             await userManager.AddToRoleAsync(adminUser, Role.Admin);
