@@ -8,7 +8,7 @@ namespace Db;
 public static class SeedManager
 {
     private const string Admin = "Admin";
-    private const string User = "Admin";
+    private const string User = "User";
     public static async Task Seed(IServiceProvider services)
     {
         await SeedRoles(services);
